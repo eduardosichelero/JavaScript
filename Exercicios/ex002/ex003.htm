@@ -25,12 +25,11 @@
 <body>
     <h1>Olá, Mundo!</h1>
     <p>Livre de mais uma maldição.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim hic praesentium fuga voluptatem, possimus iure minus cumque dolor itaque voluptate veniam error suscipit eligendi facere expedita officiis vitae aut modi?</p>
     <script>
-        var n1 = Number.ParseInt(window.prompt("Digite um numero: "))
-        var n2 = Number.ParseInt(window.prompt("Digite outro numero: "))
+        var n1 = Number(window.prompt("Digite um numero: "))
+        var n2 = Number(window.prompt("Digite outro numero: "))
         var s = n1 + n2
-        window.alert('A soma dos valores é ' + s)
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
     </script>
 </body>
 </html>
