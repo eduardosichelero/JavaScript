@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Hora do Dia</title>
 </head>
-<body>
+<body onload="carregar()">
     <header>
-        <h1>Horas</h1>
+        <h1>Hora do Dia</h1>
     </header>
     <section>
-        <div>Agora são</div>
-        <div>teste1</div>
-
+        <div id="msg">
+            Agora são
+        </div>
+        
+        <div id="img">
+            <img src="manha.png" alt="imagem do dia/noite" id="imagem-dia-noite">
+        </div>
     </section>
     <footer>
         <p>&copy; Site feito por <a href="">Eduardo da Silva Sichelero</a></p>
