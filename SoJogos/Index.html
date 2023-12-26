@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução CSS</title>
+
+    <style>
+        body{
+            background-color: rgb(104, 94, 94);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            
+        }
+
+        .container{
+            max-width: 760px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background-color: black;
+            color: white;
+            padding-bottom: 10px;
+            
+        }
+        
+        .bannerTopo{
+            width: 100%;
+        }
+
+        a{
+            color: white;
+        }
+
+        .buttons{
+            display: block;
+            width: 200px;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .ItensMenu{
+            display: block;
+            margin: auto;
+            width: 200px;
+            border: 1px solid #fff;
+            padding: 15px;
+            border-radius: 15px;
+            background-color: aqua;
+            text-align: center;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        footer{
+            background-color: black;
+            color: #fff;
+            font-size: 12px;
+            padding: 30px;
+            text-align: center;
+            margin: 0;
+            
+        }
+
+        
+
+    </style>
+        
+</head>
+
+
+<body>
+    
+    <header class="container" id="incio">
+        <img src="img/mario-luigi-yoschi.jpg" class="bannerTopo" alt="Descrição da imagem">
+        
+        <nav>
+        <div class="buttons">  
+        <h1>Só Jogos</h1>
+        <p>Conheça os principais estilos de games!</p>
+        </div>   
+        
+        
+        <a href="#FPS" class="ItensMenu">FPS</a>
+        <a href="#BattleRoyale" class="ItensMenu">Battle royale</a>
+        <a href="#FPA" class="ItensMenu">FPA</a>
+        <a href="#PVP" class="ItensMenu">PVP</a>
+            
+        </nav>
+    </header>
+
+    <main class="container">
+        <article id="FPS">
+            <h2>FPS</h2>
+            <img src="img/cod.jpg" class="bannerTopo" alt="">
+            <p>Estes jogos tem como principal característica a câmera posicionada como os olhos do personagem, dando a sensação de que é o jogador que está vivenciando a experiência (daí o termo “1ªpessoa”, pois o jogador se refere ao personagem que controla como “eu”).</p>
+            <p> A principal mecânica de jogo de um FPS é atirar. Estes jogos são uma evolução de games que utilizavam pistolas como Duck Hunt (NES) e dos jogos de tiro sobre trilhos como House of the Dead (PS1) ou Mad Dog McCree (3DO).</p>
+            <a href="#incio">Voltar ao inicio</a>
+        </article>
+        <article id="bannerTopo">
+            <h2>Battle Royale</h2>
+            <img src="img/Fornite.jpg" class="bannerTopo"alt="">
+            <p>Outro derivado importante dos jogos de tiro em primeira pessoa, o gênero FPA significa First Person Adventure, e consistem em jogos eletrônicos com a perspectiva em primeira pessoa, mas nos quais a mecânica principal não é abater todos os inimigos e sim a exploração do cenário e resolução de quebra-cabeças – elementos que fazem parte de um gênero bastante abrangente e tradicional, Ação e Aventura (The Legend of Zelda, Tomb Raider, Uncharted, Assassin’s Creed, Prince of Persia, God of War, etc), mas que ganham aqui um grau maior de imersão, por colocar o jogador “dentro da pele” do aventureiro.</p>
+            A série Metroid Prime, da Nintendo, é um ótimo exemplo de jogos eletrônicos FPA. Nestes jogos, o jogador assume o papal da protagonista Samus Aram e explora mundos alienígenas. Em Resident Evil Village, o jogador explora um vilarejo assombrado por monstros e precisa descobrir pistas e resolver puzzles para salvar sua família.
+            <br>
+            <a href="#incio">Voltar ao inicio</a>
+        </article>
+            <hr>
+        <article id="FPA">
+            <h2>FPA</h2>
+            <img src="img/stranded-deep.jpg" class="bannerTopo"alt="">
+            <p>Outro derivado importante dos jogos de tiro em primeira pessoa, o gênero FPA significa First Person Adventure, e consistem em jogos eletrônicos com a perspectiva em primeira pessoa, mas nos quais a mecânica principal não é abater todos os inimigos e sim a exploração do cenário e resolução de quebra-cabeças – elementos que fazem parte de um gênero bastante abrangente e tradicional, Ação e Aventura (The Legend of Zelda, Tomb Raider, Uncharted, Assassin’s Creed, Prince of Persia, God of War, etc), mas que ganham aqui um grau maior de imersão, por colocar o jogador “dentro da pele” do aventureiro.</p>
+            A série Metroid Prime, da Nintendo, é um ótimo exemplo de jogos eletrônicos FPA. Nestes jogos, o jogador assume o papal da protagonista Samus Aram e explora mundos alienígenas. Em Resident Evil Village, o jogador explora um vilarejo assombrado por monstros e precisa descobrir pistas e resolver puzzles para salvar sua família.
+            <br>
+            <a href="#incio">Voltar ao inicio</a>
+        </article>
+            <hr>
+        <article id="PVP">
+            <h2>PVP</h2>
+            <img src="img/CS.jpg" class="bannerTopo" alt="">
+            <p>Uma modalidade presente em quase todo tipo de jogo (em FIFA, o jogador pode disputar partidas de futebol com outro, enquanto em Gran Turismo, corridas online colocam vários jogadores na mesma pista), o PVP pode ser visto também como um gênero, pois há jogos eletrônicos que têm como mecânica central o engajamento dos jogadores em conflitos uns contra os outros.</p>
+            <p>É o caso de muitos shooters online: em Counter-Strike, um time de jogadores precisa plantar uma bomba num local específico do mapa, enquanto outro time deve impedir que a bomba seja detonada. Em Overwatch, heróis com super poderes se enfrentam em partidas online em que vence o time que empurrar um carrinho até a base inimiga, ou que controlar pontos estratégicos da arena por mais</p>
+            <a href="#incio">Voltar ao inicio</a>
+        </article>
+        
+        
+    </main>
+    
+    
+    
+    
+    <footer>
+        <div class="container">
+        <h3>
+            Todos os direitos reservados!</h3>
+        <h3>Fonte: GoGamers.gg</h3>
+    </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="headerMain">
+        <h1 class="logo">
+            ToDo List
+        </h1>
+    </header>
+
+    <main class="mainContent">
+        <div class="formAddTaskContainer">
+            <form class="form-vertical" id="frmTask" autocomplete="off">
+                <label for="txtTaskTitle">Título da Task:</label>
+                <input 
+                    type="text" 
+                    name="txtTaskTitle" 
+                    id="txtTaskTitle" 
+                    placeholder="Adicione o título da task" 
+                    minlength="5" 
+                    maxlength="60" 
+                    required 
+                    autofocus
+                >
+
+                <label for="txtTaskDescription">Descrição da Task</label>
+                <input type="text" name="txtTaskDescription" id="txtTaskDescription" placeholder="Insira uma descrição" maxlength="80">
+                
+                <input type="hidden" name="action" value="NEW_TASK" id="frmAction">
+                <input type="hidden" name="frmTaskId" value="" id="frmTaskId">
+
+                <div class="m-t-1">
+                    <button type="submit" class="btn">
+                        Cadastrar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="taskContainer">
+            <div class="noTasks" id="emptyTaskListElement">
+                Nenhuma task cadastrada
+            </div>
+    
+            <div class="taskList" id="taskListElement"></div>
+        </div>
+    </main>
+
+    <footer class="footerMain">
+        Desenvolvido por Jaison Schmidt
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+</head>
+<body>
+    <h1 
+    id="painelDeHorario"
+    style="background-color: black; color: chartreuse; padding: 20px; border: 10px groove;"
+    ></h1>
+
+    <script>
+        // const mostrador = document.getElementById("mostrador");
+        const mostrador = document.querySelector("#painelDeHorario");
+
+        // recebe um inteiro
+        // se for menor que 10, concatena 0 na frente
+        // retorna o valor
+        function corrigeHorario(tempo) {
+            if (tempo < 10) {
+                return "0" + tempo;
+            }
+
+            return "" + tempo;
+        }
+
+        function formataHora(hora, minuto, segundo) {
+            // hora:minuto:segundo
+            // return hora + ":" + minuto + ":" + segundo;
+            return `${hora}:${minuto}:${segundo}`;
+        }
+
+        const intervalo = setInterval(function(){
+            const dataAtual = new Date();
+
+            const horaFormatada = formataHora(
+                corrigeHorario(dataAtual.getHours()),
+                corrigeHorario(dataAtual.getMinutes()),
+                corrigeHorario(dataAtual.getSeconds())
+            );
+
+            // console.log(horaFormatada);
+            mostrador.textContent = horaFormatada;
+        }, 1000);
+
+        setTimeout(function(){
+            clearInterval(intervalo);
+        }, 10000);
+    </script>
+</body>
+</html>
