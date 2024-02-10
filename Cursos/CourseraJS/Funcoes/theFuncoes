@@ -1,0 +1,143 @@
+function listArrayItems(arr) {
+    // ... code to be added ...
+}
+
+function listArrayItems(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        // ... code pending here ...
+    }
+}
+
+function listArrayItems(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        console.log(arr[i]) //display the array item where the index is euqal to i
+    }
+}
+
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];
+listArrayItems(colors); //display all items in the array at once
+
+//function that takes an array as input and display all items of this array
+function listArrayItems(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        console.log(i, arr[i])
+    }
+}
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];
+listArrayItems(colors);
+
+function listArrayItems(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        console.log(i+1, arr[i])
+    }
+}
+
+function listArrayItems(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] == 'red') {
+            console.log(i*100, "tomato!")
+        } else {
+            console.log(i*100, arr[i])
+        }
+    }
+}
+
+/* 
+Sua tarefa neste exercício é codificar uma função que será capaz de pegar uma palavra e localizar a posição de uma letra escolhida nessa palavra.  
+
+Tarefa 1:
+Escreva uma função chamada letterFinder que aceite dois parâmetros: palavra e correspondência.
+
+Tarefa 2:
+Codifique um loop "for" dentro do corpo da função. O contador do loop for deve começar em zero, aumentar em 1 a cada iteração e sair quando o valor da variável do contador for igual ao comprimento do parâmetro word .
+
+Tarefa 3:
+Adicione uma instrução if dentro do loop for cuja condição funcione da seguinte forma:
+
+ Acessar cada uma das letras dentro da palavra passada usando a variável de contador, com palavra[i]. 
+
+Verificar se a palavra atual [i] é igual ao valor de match.
+
+Tarefa 4:
+console.log o seguinte dentro do corpo da instrução if: console.log('Found the', match, 'at', i).
+
+Tarefa 5:
+Escreva a condição else. Aqui, o senhor apenas registrará no console o seguinte: console.log('---No match found at', i).
+
+Tarefa 6:
+Chame o letterFinder e passe como primeiro argumento a string "test" e, como segundo argumento, a string "t".
+
+Seu resultado deve ser o seguinte:
+
+Encontrou o t em 0
+
+---Não foi encontrada correspondência em 1
+
+---Nenhuma correspondência encontrada em 2
+
+Encontrou o t em 3
+
+*/
+
+// 1
+
+// A function that accepts two parameters
+function letterFinder(word, match) {
+
+}
+
+// 2 
+
+function letterFinder(word, match) {
+    for(i = 0; i < word.length; i++) {
+        //this loop exists when i is equal to the length of the word
+    }
+}
+
+// 3
+
+function letterFinder(word, match) {
+    for(i = 0; i < word.length; i++) {
+        if(word[i] == match) {
+            //check if the current characater, word[i], is equal to the match
+        }
+    }
+}
+
+// 4 
+
+function letterFinder(word, match) {
+    for(i = 0; i < word.length; i++) {
+        if(word[i] == match) {
+            //check if the current characater, word[i], is equal to the match
+            console.log('Found the', match, 'at', i)
+        }
+    }
+}
+
+// 5 function letterFinder(word, match) {
+    function letterFinder(word, match) {
+        for(i = 0; i < word.length; i++) {
+            if(word[i] == match) {
+                //check if the current characater, word[i], is equal to the match
+                console.log('Found the', match, 'at', i)
+            } else {
+                console.log('---No match found at', i)
+            }
+        }
+    }
+
+// 6 
+
+function letterFinder(word, match) {
+    for(var i = 0; i < word.length; i++) {
+        if(word[i] == match) {
+            //check if the current characater, word[i], is equal to the match
+            console.log('Found the', match, 'at', i)
+        } else {
+            console.log('---No match found at', i)
+        }
+    }
+}
+
+letterFinder("test", "t")
